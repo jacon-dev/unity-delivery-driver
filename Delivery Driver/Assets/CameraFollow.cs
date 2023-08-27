@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour
 {
     [SerializeField] GameObject playerCar;
 
-    void Update()
+    void LateUpdate()
     {
         transform.position = playerCar.transform.position + new Vector3(0, 0, -11f);
     }
